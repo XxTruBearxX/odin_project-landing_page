@@ -6,6 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .header {
@@ -37,17 +38,19 @@ li a {
     text-align: end;
 }
 
-.container-1 {
+.container {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .hero {
     display:flex;
     flex-direction: row;
     background-color: #1F2937;
+    flex: 1;
 }
-
+/* tsb stands for; title, subtitle and button */
 .tsb {
     display: flex;
     flex-direction: column;
@@ -91,18 +94,53 @@ li a {
 
 .section-1 {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     color: #1F2937;
+    flex: 1;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+    align-items: center;
 }
 
 .section-title {
+    display: flex;
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    text-align: center;
+    justify-self: center;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-bottom: 40px;
+}
+
+.pic {
+    display: flex;
+    flex-direction: row;
+    max-width: 200px;
+    max-height: 200px;
+    border: solid;
+    border-width: 4px;
+    border-color:#3882F6;
+    border-radius: 10px;
 }
 
 .section-2 {
     background-color: #E5E7EB;
+    flex: 1;
+}
+
+/* q-a stands for qoute and author*/
+.q-a {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
 }
 
 .qoute {
@@ -110,9 +148,63 @@ li a {
     font-weight: 300;
     color: #1F2937;
     font-style: italic;
+    margin-right: 200px;
+    margin-left: 200px;
+    max-width: 760px;
+    align-self: center;
+}
+
+.author {
+    font-weight: bold;
+    align-self: end;
+    margin-right: 550px;
+    margin-bottom: 30px;
+}
+
+.section-3 {
+    display: flex;
+    flex: 1;
 }
 
 .banner {
+    display: flex;
     background-color: #3882F6;
+    flex: 1;
+    flex-direction: row;
+    margin: 100px 200px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #F9FAF8;
+    justify-content: space-evenly;
 }
 
+/* bms stands for; banner, banner-main-text, and banner-sub-text*/
+.bms {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-main-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: -8px;
+}
+
+.banner .button {
+    background-color:#3882F6;
+    color: #F9FAF8;
+    border: solid;
+    border-color: #F9FAF8;
+    font-size: 20px;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self:  center;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+}
